@@ -7,12 +7,19 @@
     android:orientation="vertical"
     tools:context=".SignupActivity">
 
+    <ImageButton
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/backBtn"
+        android:background="@drawable/left_arrow" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:text="회원가입"
         android:textColor="#000000"
         android:textSize="23dp" />
@@ -56,6 +63,7 @@
             android:textColor="#4E4E4E" />
 
         <EditText
+            android:id="@+id/et_checksignup_pwd"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:layout_marginBottom="35dp"
@@ -66,6 +74,7 @@
             android:textColor="#4E4E4E" />
 
         <EditText
+            android:id="@+id/emailEt"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:layout_marginBottom="5dp"
@@ -74,6 +83,7 @@
             android:paddingLeft="20dp"
             android:textColor="#4E4E4E" />
 
+        <!--
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,16 +101,17 @@
             android:hint="인증번호 입력"
             android:paddingLeft="20dp"
             android:textColor="#4E4E4E" />
+        -->
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_signup"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:textAllCaps="false"
-        android:background="@drawable/button_border"
-        android:textSize="18dp"
         android:layout_gravity="center"
-        android:id="@+id/btn_signup"
-        android:text="Sign up"/>
+        android:background="@drawable/button_border"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
 
 </LinearLayout>
