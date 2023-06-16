@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/edittext_border"
-    android:backgroundTint="@color/yellow_50"
+    android:backgroundTint="@color/pink_50"
     android:orientation="vertical"
     android:paddingTop="20dp"
     android:paddingBottom="20dp"
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
-    android:layout_marginBottom="20dp">
+    android:layout_marginBottom="20dp"
+    android:id="@+id/diary_lly">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,20 +38,19 @@
         android:layout_marginBottom="13dp"
         android:gravity="center_vertical">
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="5dp"
-            android:padding="1sp"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="8dp"
             android:id="@+id/list_feeling_img"
             android:src="@drawable/feeling_happy"/>
         <TextView
+            android:id="@+id/list_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="제목"
             android:textStyle="bold"
-            android:id="@+id/list_title"
-            android:textSize="18dp"
-            />
+            android:textSize="18dp"/>
     </LinearLayout>
 
     <TextView
@@ -70,20 +70,20 @@
         android:gravity="center_vertical">
 
         <ImageButton
-            android:id="@+id/list_heart_imgbtn"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:id="@+id/heart_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:contentDescription="heart"
             android:padding="1sp"
             android:scaleType="centerCrop"
-            android:src="@drawable/full_heart" />
+            android:src="@drawable/full_heart"/>
         <TextView
+            android:id="@+id/heart_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginLeft="5dp"
             android:textSize="15dp"
-            android:id="@+id/list_heart_count"
             android:text="100"/>
     </LinearLayout>
 
